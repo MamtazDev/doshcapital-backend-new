@@ -9,8 +9,8 @@ const {
 const { isAuth } = require("../utils/middleware");
 const { sendEmail } = require("../utils/auth");
 
-const router = express.Router();
 
+const router = express.Router();
 router.post("/signup", registerUser);
 router.post("/login", loginUser);
 router.get("/", getAllUser);
